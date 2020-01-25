@@ -1,9 +1,8 @@
-package com.algo.self_200122;
+package com.algo.self_main;
 
 import java.util.Scanner;
 
-public class ladder {
-
+class Solution {
 	public static void main(String[] args) throws Exception {
 		int[][] ladder = new int[100][100];
 		Scanner sc = new Scanner(System.in);
