@@ -1,8 +1,8 @@
-package com.algo.self_main;
+package com.algo.self_200129;
 
 import java.util.Scanner;
 
-public class Main {
+public class jo_1175_김승기 {
 	static int[] numbers;
 	static int N, R, C;
 
