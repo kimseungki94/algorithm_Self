@@ -1,7 +1,7 @@
 package com.algo.self_main;
 import java.util.Scanner;
 
-public class Main {
+public class bj14501_seungki {
 	static int N;
 	static int[] term;
 	static int[] pay;
@@ -34,14 +34,14 @@ public class Main {
 		}
 		
 	}
-
+	// x번째 수 뽑아 기존 순서 뒤에 붙이기
 	private static void permutation(int index) {
 		Scanner sc = new Scanner(System.in);
-		if (index == N) { 
+		if (index == N) { // 순열 완성
 			if(maxmoney<money) {
 				maxmoney=money;
 			}
-			
+			//System.out.println("Money"+money);
 			return;
 		}else if(index > N){
 			return;
