@@ -2,7 +2,7 @@ package com.algo.self_main;
 
 import java.util.Scanner;
 
-public class Main {
+public class bj13458_seungki {
 	static long count = 0;
 	static boolean select = true;
 

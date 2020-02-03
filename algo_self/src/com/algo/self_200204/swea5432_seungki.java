@@ -1,11 +1,11 @@
-package com.algo.self_main;
+package com.algo.self_200204;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Solution {
+public class swea5432_seungki {
 	static int count = 0;
 	static int stick = 0;
 
