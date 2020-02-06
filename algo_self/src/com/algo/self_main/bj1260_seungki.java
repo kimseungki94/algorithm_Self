@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Main {
+public class bj1260_seungki {
 
 	private static int[][] map;
 	private static int N,M,start;
