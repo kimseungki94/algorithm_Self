@@ -1,11 +1,9 @@
-package com.algo.self_200207;
+package com.algo.self_200209;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-import java.io.*;
-
-class Main {
-
-
+public class bj3985_seungki {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
@@ -35,4 +33,5 @@ class Main {
 	static int changeInt(String s) {
 		return Integer.parseInt(s);
 	}
+	
 }
