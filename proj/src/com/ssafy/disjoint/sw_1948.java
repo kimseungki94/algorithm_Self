@@ -2,7 +2,7 @@ package com.ssafy.disjoint;
 
 import java.util.Scanner;
 
-public class Solution {
+public class sw_1948 {
 	static int c = 1;
 
 	public static void main(String[] args) {
