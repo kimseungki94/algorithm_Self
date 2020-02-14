@@ -1,8 +1,7 @@
-package com.ssafy.tree;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
 	static int limit = 0;
 	static int N = 0;
 	static int[] num;
