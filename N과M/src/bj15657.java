@@ -30,36 +30,30 @@ public class bj15657 {
 		}
 		Arrays.sort(store);
 		sb = new StringBuilder();
-		dfs(0, "");
+		dfs(0, "",0);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		bw.write(sb.toString().trim());
 		bw.close();
 	}
 
-	private static void dfs(int index, String str) {
+	private static void dfs(int index, String str,int last) {
 		if (index == limit) {
-			String temp = sb.toString();
-			if(temp.contains(str.trim())) {
-				return;
-			}else {
-				sb.append(str.trim() + "\n");
-			}
-			
+			sb.append(str.trim() + "\n");
 			// System.out.println();
 			return;
 		}
 		for (int j = 0; j < N; j++) {
-			if (visited[j] == false) {
+			//if (visited[j] == false && j>=last) {
 				num[index] = store[j];
-				visited[j]=true;
+				//visited[j]=true;
+				last=j;
+					dfs(index + 1, str + " " + store[j],last);
 
-				
-				dfs(index + 1, str + " " + store[j]);
-
-				visited[j]=false;
-			}
+				//visited[j]=false;
+			//}
 		}
+
 	}
 
 }
