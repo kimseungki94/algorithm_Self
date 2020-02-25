@@ -1,6 +1,5 @@
 package study_0224;
 
-import java.awt.Window.Type;
 import java.util.ArrayList;
 
 public class AL {

@@ -1,12 +1,12 @@
+package nAndM;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class bj15654 {
+public class bj15652 {
 	static int[] num;
 	static int N;
 	static int limit;
@@ -23,12 +23,6 @@ public class bj15654 {
 		limit = Integer.parseInt(st.nextToken()); // 제한된 수
 		num = new int[limit];
 		visited = new boolean[N + 1];
-		StringTokenizer st1 = new StringTokenizer(br.readLine());
-		store = new int[N];
-		for(int i=0;i<N;i++) {
-			store[i] = Integer.parseInt(st1.nextToken());
-		}
-		Arrays.sort(store);
 		sb = new StringBuilder();
 		dfs(0, "",0);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -43,14 +37,14 @@ public class bj15654 {
 			// System.out.println();
 			return;
 		}
-		for (int j = 0; j < N; j++) {
+		for (int j = 1; j <= N; j++) {
 			if (visited[j] == false && j>=last) {
-				num[index] = store[j];
-				visited[j]=true;
-				last=j;
-					dfs(index + 1, str + " " + store[j],last);
+				num[index] = j;
+				last = j;
+				// visited[j]=true;
+					dfs(index + 1, str + " " + j, last);
 
-				visited[j]=false;
+				// visited[j]=false;
 			}
 		}
 

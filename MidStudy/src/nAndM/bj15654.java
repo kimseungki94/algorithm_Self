@@ -1,3 +1,4 @@
+package nAndM;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class bj15656 {
+public class bj15654 {
 	static int[] num;
 	static int N;
 	static int limit;
@@ -44,14 +45,14 @@ public class bj15656 {
 			return;
 		}
 		for (int j = 0; j < N; j++) {
-			//if (visited[j] == false && j>=last) {
+			if (visited[j] == false && j>=last) {
 				num[index] = store[j];
-				//visited[j]=true;
+				visited[j]=true;
 				last=j;
 					dfs(index + 1, str + " " + store[j],last);
 
-				//visited[j]=false;
-			//}
+				visited[j]=false;
+			}
 		}
 
 	}
