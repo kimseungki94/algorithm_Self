@@ -7,39 +7,38 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class bj_1158 {
+public class bj_11659 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int N = Integer.parseInt(st.nextToken());
 		int K = Integer.parseInt(st.nextToken());
+		int[] store = new int[K];
 		int[] arr = new int[N];
-		int limit=0;		int count=1;
-		for(int i=0;i<arr.length;i++) {
-			arr[i]++;
+		st = new StringTokenizer(br.readLine());
+		for(int i=0;i<N;i++) {
+			arr[i]=Integer.parseInt(st.nextToken());
 		}
-		System.out.print("<");
-		L:while(true) {
-			for(int i=0;i<arr.length;i++) {
-				if(arr[i]==1 && count!=K) count++;
-				else if(arr[i]==1 && count==K) {
-					limit++;
-					if(limit==arr.length) {
-						count=1;
-						bw.write((i+1)+">");
-						arr[i]=0;
-						break L;
-					}else {
-						count=1;
-						System.out.print((i+1)+", ");
-						arr[i]=0;
-					}	
-				}
-				else if(arr[i]==0) continue;		
+		for(int i=1;i<N;i++) {
+			arr[i]+=arr[i-1];
+		}
+		for(int i=0;i<K;i++) {
+			int result=0;
+			st = new StringTokenizer(br.readLine());
+			int start = Integer.parseInt(st.nextToken())-1;
+			int end = Integer.parseInt(st.nextToken())-1;
+			if(start==0) {
+				result=arr[end];
+				store[i]=result;
+			}else {
+				result=arr[end]-arr[start-1];
+				store[i]=result;
 			}
+			bw.write(store[i]+"\n");
 		}
 		bw.flush();
         bw.close();
 	}
+
 }
