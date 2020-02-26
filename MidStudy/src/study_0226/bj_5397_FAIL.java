@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class bj_5397_FAIL {
@@ -14,7 +13,7 @@ public class bj_5397_FAIL {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		LinkedList<Character> arraylist = new LinkedList<Character>();
+		ArrayList<Character> arraylist = new ArrayList<Character>();
 		StringTokenizer st;
 		st = new StringTokenizer(br.readLine());
 		int N = Integer.parseInt(st.nextToken());
@@ -41,7 +40,7 @@ public class bj_5397_FAIL {
 					}
 				} else if (arr[i] == '-') {
 					 if(curser!=0) {
-						arraylist.;
+						arraylist.remove(curser);
 						curser--;
 					}
 				} else {
