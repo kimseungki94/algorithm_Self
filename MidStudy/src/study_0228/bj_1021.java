@@ -11,7 +11,9 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class bj_1021 {
-
+	// 덱을 2개돌려서 한개는 2번째 한개는 3번째 연산으로 풀이했음
+	// 이후 더 최소인거를 iterator을 통해 복제한후 다른 덱에 복사함
+	// but 덱 2개만드는거보다 A만 만들고 카운트한걸 덱 size를 통해 비교햇으면 좀 더 나았을거같은 생각도 있다. 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

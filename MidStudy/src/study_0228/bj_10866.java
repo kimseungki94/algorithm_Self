@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class bj_10866 {
-
+	//덱에 대한 기초적 지식 습득..
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
