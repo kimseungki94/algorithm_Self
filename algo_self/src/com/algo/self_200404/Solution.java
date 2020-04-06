@@ -25,7 +25,6 @@ public class Solution {
             int n = sc.nextInt();
             Node[] arr = new Node[n+1];
             for(int i=2;i<=n;i++) {
-            	//st = new StringTokenizer(br.readLine()," ");
                 int t = sc.nextInt();
                 int a = sc.nextInt();
                 int b = sc.nextInt();
