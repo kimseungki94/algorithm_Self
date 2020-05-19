@@ -75,12 +75,6 @@ public class bj_10819 {
 				}else {
 					result_temp=0;
 				}
-				/*
-				for(int t=0;t<N;t++) {
-					bw.write(arr[t]+" ");
-				}
-				bw.write("\n");
-				*/
 			}
 		}
 		
