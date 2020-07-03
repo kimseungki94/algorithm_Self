@@ -1,3 +1,5 @@
+package programmers_Level1;
+
 import java.util.*;
 import java.awt.*;
 public class pro_12906 {
