@@ -32,7 +32,7 @@ class pro_42840 {
                 score3++;
             }
     }
-	int[] score = {score1,score2,score3};
+
     if(score1 > score2 && score1 >score3){
        int[] answer = {1}; 
        return answer;
